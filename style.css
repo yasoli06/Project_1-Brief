@@ -17,6 +17,11 @@ body{
    color: white;
 }
 
+.photo-projects{
+   height: 150px;
+   width: 200px;
+}
+
 .logos{
    filter: grayscale(100%);
 }
@@ -26,6 +31,11 @@ body{
    background-color: #292E47;
 }
 
+.yellow-square{
+   width: 1000px; 
+   height: 400px;
+   background-color: #FFC600;
+}
 
 .principal-Photo{
    height: 400px;
