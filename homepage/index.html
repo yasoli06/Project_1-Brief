@@ -9,16 +9,19 @@
   <body>
     <div>
       <nav class="nav-bar">
-        <a href="#Home">
-          <img src="../project-assets/logos/circle.svg" alt="logo-circle" />
+        <a id="logo" class="logo" href="../index.html">
+           <img
+            src="../project-assets/logos/circle.svg"
+            alt="logo-circle"
+          />
         </a>
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#Projects"></a>Projects</li>
-          <li><a href="#Services"></a>Services</li>
+        <ul class="link-ul">
+          <li><a class="link blue-text" href="../homepage/index.html">Home</a></li>
+          <li><a class="link grey-text" href="#projects">Projects</a></li>
+          <li><a class="link grey-text" href="#services">Services</a></li>
         </ul>
-        <div class="boton">
-          <a class="blueBtn" id="btnMenu" href="./contacts.html">Contact Us</a>
+        <div class="nav-button">
+          <a class="blueBtn" id="btnMenu" href="../contacts/contact.html">Contact Us</a>
         </div>
       </nav>
     </div>
@@ -30,8 +33,10 @@
           develop astonishing websites and mobile apps.
         </p>
         <div class="header-btn">
-         <a class="btn" href="#newsletter">Get in touch</a>
-         <a class="work" href="#projects">See our work</a>
+        <div class="nav-button">
+          <a class="blueBtn" id="btnMenu" href="../contacts/contact.html">Get in touch</a>
+        </div>
+         <a class="link grey-text" href="#projects">See our work</a>
         </div>
       </div>
       <div class="header-photos">
@@ -41,24 +46,28 @@
     </header>
     <!--LOGOMARCAS-->
     <div class="logos">
-      <img src="../project-assets/logos/airbnb-logo.svg" alt="airbnb-logo" />
-      <img src="../project-assets/logos/google-logo.svg" alt="google-logo" />
-      <img
-        src="../project-assets/logos/microsoft-logo.svg"
-        alt="microsoft-logo"
-      />
-      <img src="../project-assets/logos/fedex-logo.svg" alt="fedex-logo" />
-      <img
-        src="../project-assets/logos/amazon-logo.svg"
-        alt="logo amazon-logo"
-      />
+      <a class="link-logo" href="https://www.airbnb.com">
+        <img class="color-logo" src="../project-assets/logos/airbnb-logo.svg" alt="airbnb-logo" />
+      </a>
+      <a class="link-logo" href="https://www.google.com">
+        <img class="color-logo" src="../project-assets/logos/google-logo.svg" alt="google-logo" />
+      </a>
+      <a class="link-logo" href="https://www.microsoft.com">
+        <img class="color-logo" src="../project-assets/logos/microsoft-logo.svg" alt="microsoft-logo"/>
+      </a>
+      <a class="link-logo" href="https://www.fedex.com">
+        <img class="color-logo" src="../project-assets/logos/fedex-logo.svg" alt="fedex-logo" />  
+      </a>
+      <a class="link-logo" href="https://www.amazon.com">
+        <img class="color-logo" src="../project-assets/logos/amazon-logo.svg" alt="logo amazon-logo"/>
+      </a>
     </div>
     <!-- section1 recente projects-->
     <section class="project">
       <h2>Recent Projects</h2>
       <div class="project-container">
         <article class="project-card">
-          <a class="project-link" href="#">
+          <a class="project-link" href="../project_page/simplify.html">
           <img class="project-img" src="../project-assets/projects-section/1.jpg" alt="square"/>
           <div>
             <h3 class="project-title">Simplify</h3>
@@ -68,7 +77,7 @@
           </a>
       </article>
       <article class="project-card">
-        <a class="project-link" href="#">
+        <a class="project-link" href="../project_page/dashcoin.html">
         <img class="project-img" src="../project-assets/projects-section/2.jpg" alt="circles"/>
         <div>
           <h3 class="project-title">Dashcoin</h3>
@@ -78,7 +87,7 @@
         </a>
       </article>
       <article class="project-card">
-        <a class="project-link" href="#">
+        <a class="project-link" href="../project_page/vectorify.html">
         <img class="project-img" src="../project-assets/projects-section/3.jpg" alt="circles"/>
         <div>
           <h3 class="project-title">Vectorify</h3>
@@ -160,14 +169,25 @@
         <button class="button">Suscribe</button>
       </div>
     </section>
-    <footer>
-      <div>
-        <p>Team</p>
-        <p>Services</p>
-        <p>About Us</p>
-        <p>Press</p>
-        <p>Projects</p>
-        <p>Privacy Policy</p>
+    <footer class="footer">
+      <div class="footer-text">
+        <a class="logo" href="../homepage/index.html">
+          <img src="../project-assets/logos/circle.svg" alt="logo"/>
+        </a>
+        <address>
+          2972 Westheimer Rd. Santa Ana,<br>
+          Illinois 85486
+        </address>
+      </div>
+      <div class="footer-links">
+        <ul class="footer-ul">
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          </ul>
       </div>
     </footer>
   </body>
