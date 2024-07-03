@@ -67,6 +67,77 @@ body{
     font-size: 0.9em;
     padding: 10px 20px;
  }
+ .burguer{
+   display: none;
+   flex-direction: column;
+   justify-content: space-around;
+   position: absolute;
+   top: 40px;
+   right: 11.5%;
+   height: 30px;
+   width: 50px;
+}
+.burguer-line {
+   margin: 10px;
+   height: 25px;
+   width: 100px;
+   background-color: grey;
+   border-radius: 15%;
+ }
+
+ .hidden-nav {
+   text-align: center;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   height: 900px;
+   width: 30%;
+   position: absolute;
+   right: 0%;
+   top: -1500%;
+   background: linear-gradient(
+     to bottom,
+     #A2D6F9 0%,
+     #6B708D 100%
+   );
+ }
+ 
+ .hidden-nav-active {
+   text-align: center;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   height: 900px;
+   width: 30%;
+   position: absolute;
+   right: 0%;
+   top: -5%;
+   background: linear-gradient(
+     to bottom,
+     #A2D6F9 0%,
+     #6B708D 100%
+   );
+ }
+ 
+ .hidden-nav-active li {
+   margin: 0 auto;
+   margin-top: 120px;
+   width: 50%;
+   height: 40px;
+   background-color: #072ac8;
+   padding-top: 12%;
+ }
+ 
+ .hidden-nav-active a {
+   text-decoration: none;
+   color: white;
+ }
+ 
+ .hidden-nav-active a:hover {
+   text-decoration: none;
+   color: #ffc600;
+
+ }
  
  .section1{
    text-align: left;
@@ -218,6 +289,47 @@ body{
    text-decoration: underline;
    color: #072ac8;
    font-size: 17px;
+ }
+
+ @media (min-width: 900px) and (max-width: 1200px) {
+
+   #logo {
+     position: absolute;
+     text-decoration: none;
+     margin-top: 20px;
+     margin-left: 30px;
+  }
+  .link-ul {
+     display: none;
+   }
+  
+   #nav-button{
+     position: absolute;
+     left: 40%;
+     background-color: #072ac8;
+     height: 50px;
+     width: 90px;
+     font-size: 24px;
+     margin-top:30px;
+  }
+  
+  .burguer {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     position: absolute;
+     top: 30px;
+     right: 8%;
+     height: 35px;
+     width: 55px;
+  }
+  .burguer-line {
+     margin: 0 auto;
+     height: 5px;
+     width: 30px;
+     background-color: #072ac8;
+     border-radius: 15%;
+  }
  }
 
  
