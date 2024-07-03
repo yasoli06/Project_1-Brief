@@ -27,25 +27,28 @@
     </div>
     <section class="contact-section">
       <h1 class="contact-title">Contact Us</h1>
-      <form class="contact-form">
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+      <form id="contact-form" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name">
+        <div id="name-error" class="error"></div>
         <div class="contact-details">
           <div class="email">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <div id="mail-error" class="error"></div>
           </div>
           <div class="phone">
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            <div id="phone-error" class="error"></div>
           </div>
         </div>
         <div class="message">
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+          <div id="message-error" class="error"></div>
         </div>  
-        <button id="submit-btn" type="#submit">Submit</button>
-        
+        <button id="submit-btn" type="#submit">Submit</button>   
       </form>
     </section>
     <footer class="footer">

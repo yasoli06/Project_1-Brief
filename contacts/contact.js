@@ -1,95 +1,87 @@
-const submit = document.getElementById("submit-btn");
-const fullName = document.getElementById("full-name");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
-const message = document.getElementById("message");
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const fullName = document.getElementById("name");
+  const email = document.getElementById("email");
+  const phone = document.getElementById("phone");
+  const message = document.getElementById("message");
 
+  const nameError = document.getElementById("name-error");
+  const mailError = document.getElementById("mail-error");
+  const phoneError = document.getElementById("phone-error");
+  const messageError = document.getElementById("message-error");
 
-function validName() {
-  if (!fullName.value) {
-    fullName.innerHTML = `<p class="no-alert alert">Debes introducir un nombre</p>`;
-    fullName.style.borderColor = "red";
-    fullName.style.borderStyle = "solid";
-  } else {
-    nameError.innerHTML = `<p class="no-alert">Debes introducir un nombre</p>`;
-    name.style.borderStyle = "none";
-  }
-}
-
-fullName.addEventListener("input", () => {
-  validName();
-});
-
-function validMail() {
-  let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  if (!email.value) {
-    mailError.innerHTML = `<p class="no-alert alert">Debes introducir un e-mail</p>`;
-    email.style.borderColor = "red";
-    email.style.borderStyle = "solid";
-  } else {
-    if (regex.test(email.value)) {
-      mailError.innerHTML = `<p class="no-alert">Debes introducir un e-mail</p>`;
-      email.style.borderStyle = "none";
+  function validateName() {
+    if (!fullName.value) {
+      nameError.innerText = "Debes introducir un nombre";
+      fullName.style.borderColor = "red";
     } else {
-      mailError.innerHTML = `<p class="no-alert alert">Debes introducir un e-mail válido</p>`;
+      nameError.innerText = "";
+      fullName.style.borderColor = "";
+    }
+  }
+
+  function validateMail() {
+    const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!email.value) {
+      mailError.innerText = "Debes introducir un e-mail";
       email.style.borderColor = "red";
-      email.style.borderStyle = "solid";
-    }
-  }
-}
-
-email.addEventListener("input", () => {
-  validMail();
-});
-
-function validPhone() {
-  if (!phone.value) {
-    phoneError.innerHTML = `<p class="no-alert alert">Debes introducir tu nº de teléfono</p>`;
-    phone.style.borderColor = "red";
-    phone.style.borderStyle = "solid";
-  } else {
-    phoneError.innerHTML = `<p class="no-alert">Debes introducir tu nº de teléfono</p>`;
-    phone.style.borderStyle = "none";
-  }
-}
-
-phone.addEventListener("input", () => {
-  validPhone();
-});
-
-function validMsg() {
-  if (!message.value) {
-    messageError.innerHTML = `<p class="no-alert alert">El mensaje debe tener al menos 5 caracteres</p>`;
-    message.style.borderColor = "red";
-    message.style.borderStyle = "solid";
-  } else {
-    if (message.value.length > 4) {
-      messageError.innerHTML = `<p class="no-alert">El mensaje debe tener al menos 5 caracteres</p>`;
-      message.style.borderStyle = "none";
+    } else if (!regex.test(email.value)) {
+      mailError.innerText = "Debes introducir un e-mail válido";
+      email.style.borderColor = "red";
     } else {
-      messageError.innerHTML = `<p class="no-alert alert">El mensaje debe tener al menos 5 caracteres</p>`;
-      message.style.borderColor = "red";
-      message.style.borderStyle = "solid";
+      mailError.innerText = "";
+      email.style.borderColor = "";
     }
   }
-}
 
-message.addEventListener("input", () => {
-  validMsg();
+  function validatePhone() {
+    if (!phone.value) {
+      phoneError.innerText = "Debes introducir tu nº de teléfono";
+      phone.style.borderColor = "red";
+    } else {
+      phoneError.innerText = "";
+      phone.style.borderColor = "";
+    }
+  }
+
+  function validateMsg() {
+    if (message.value.length < 5) {
+      messageError.innerText = "El mensaje debe tener al menos 5 caracteres";
+      message.style.borderColor = "red";
+    } else {
+      messageError.innerText = "";
+      message.style.borderColor = "";
+    }
+  }
+
+  fullName.addEventListener("input", validateName);
+  email.addEventListener("input", validateMail);
+  phone.addEventListener("input", validatePhone);
+  message.addEventListener("input", validateMsg);
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    validateName();
+    validateMail();
+    validatePhone();
+    validateMsg();
+
+    if (
+      !nameError.innerText &&
+      !mailError.innerText &&
+      !phoneError.innerText &&
+      !messageError.innerText
+    ) {
+      console.log(`
+      Client's name: ${fullName.value}
+      Client's email: ${email.value}
+      Client's phone: ${phone.value}
+      Client's message: ${message.value}`);
+    }
+  });
 });
 
-submit.addEventListener("click", (click) => {
-  click.preventDefault();
-  validName();
-  validMail();
-  validPhone();
-  validMsg();
-  console.log(`
-  Client's name: ${fullName.value}
-  Client's email: ${email.value}
-  Client's phone: ${phone.value}
-  Client's message: ${message.value}`);
-});
+
 
 //1º Al hacer click en el botón se ejecuta una función
 //2º Dicha función previene el comportamiento por defecto del form
