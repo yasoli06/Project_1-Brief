@@ -58,7 +58,7 @@ The website is built for a fictional web design company and includes the followi
 3. To view the website locally, open the index.html file in a web browser.
 
 ## Deployment
-The website is deployed on Vercel. You can view the live website [here](https://vercel.com/yasmins-projects-080291b3/project-1-brief)
+The website is deployed on Vercel. You can view the live website [here](https://project-1-brief.vercel.app/)
 
 ## Assets
 For this project, the following assets were used:
