@@ -58,7 +58,6 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   border-radius: 1hpx;
 }
 .nav-button a:hover{
    color:#ffc600;
@@ -165,12 +164,24 @@ body{
    color: #6C757D;
    margin: 0 0 20px 0;
 }
-.header-btn{
+.buttons{
+   display: flex;
+}
+.btnHeader{
+   height: 47px;
+   width: 148px;
+   background-color:#072AC8;
    display: flex;
    align-items: center;
-   padding-top: 20px;
-   justify-content: flex-start;
+   justify-content: center;
+   color: white;
+   text-decoration: none;
 }
+
+.btnHeader:hover{
+   color:#FFC600;
+}
+
 
 .header-photos{
    background-image: url(./project-assets/hero-section/hero-image.png);
@@ -544,23 +555,23 @@ body{
    justify-content: space-around;
    top: 30px;
    right: 8%;
-   height: 35px;
-   width: 55px;
+   height: 25px;
+   width: 45px;
    }
-   .burguer-line {
-      margin: 0 ;
-      height: 5px;
-      width: 30px;
-      background-color: #072ac8;
-      border-radius: 15%;
-   }
-   .nav-bar{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 100px;
-      padding: 0 20px;
-   }
+.burguer-line {
+   margin: 0 ;
+   height: 5px;
+   width: 30px;
+   background-color: #072ac8;
+   border-radius: 15%;
+}
+.nav-bar{
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   padding: 0 20px;
+}
    #logo {
    position: absolute;
    margin: 0 auto;
@@ -715,85 +726,92 @@ body{
 }
 }
 
-@media (min-width: 700px) and (max-width: 899px){
-   .burguer {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      top: 30px;
-      right: 8%;
-      height: 35px;
-      width: 55px;
-      }
-      .burguer-line {
-         margin: 0 ;
-         height: 5px;
-         width: 30px;
-         background-color: #072ac8;
-         border-radius: 15%;
-      }
-      .nav-bar{
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         height: 100px;
-         padding: 0 20px;
-      }
-      #logo {
-      position: absolute;
-      margin: 0 auto;
-      padding-left: 30px;
-   }
-   .link-ul {
-      display: none;
-    }
-    #nav-button{
-      position: absolute;
-      display: flex;
-      left: 50%;
-      background-color: #072ac8;
-      height: 50px;
-      width: 90px;
-      font-size: 24px;
-      margin-top:10px;
-   }
+@media (min-width: 700px) and (max-width: 899px) {
+.burguer {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   top: 30px;
+   right: 1%;
+   height: 20px;
+   width: 40px;
+   
+}
+.burguer-line {
+   margin: 0 ;
+   height: 5px;
+   width: 20px;
+   background-color: #072ac8;
+   border-radius: 15%;
+}
+.nav-bar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 50px;
+}
+.hidden-nav{
+   z-index: 500;
+}
+#logo {
+   position: absolute;
+   margin: 30px;
+   padding-left: px;
+}
+.link-ul {
+   display: none;
+}
+#nav-button{
+   position: absolute;
+   display: flex;
+   left: 50%;
+   background-color: #072ac8;
+   height: 40px;
+   width: 80px;
+   font-size: 16px;
+}
 .header{
-      display: flex;
-      text-align: left;
-      width: 85%;
-      margin-top: 90px;
-      padding-top: 0;
-      padding-bottom: 0;
-   }
+   display: flex;
+   text-align: left;
+   width: 90%;
+   margin-top: 70px;
+   padding-bottom: 0;
+}
    
 .header-photos {
-      background-image: url(./project-assets/hero-section/hero-image.png);
-      background-size: contain;
-      width: 90%;
-      height: 400px;
-   }
-    .card-1{
-      width: 250px;
-      position: relative;
-      top: 0;
-      left: -5%;
-   }
-   .card-2{
-      width: 250px;
-      position: relative;
-      left: 2%;
-      top: 60%;
-   }
-   .header-content h1{
-      font-size: 2.5em;
-      color: #292E47;
-      margin: 1 0 20px 0;
-   }
-   .header-content p{
-      font-size: 1.2em;
-      color: #6C757D;
-      margin: 1 0 20px 0;
-   } 
+   background-image: url(./project-assets/hero-section/hero-image.png);
+   background-size: contain;
+   width: 70%;
+   height: 350px;
+   margin-left: 60px;
+}
+.card-1{
+   width: 200px;
+   top: 0;
+}
+.card-2{
+   width: 200px;
+   position: relative;
+   left: 35%;
+}
+.header-content h1{
+   font-size: 2em;
+   color: #292E47;
+   margin: 1 0 20px 0;
+}
+.header-content p{
+   font-size: 1em;
+   color: #6C757D;
+   margin: 1 0 20px 0;
+} 
+.blueBtn{
+   font-size: 16px;
+   background-color: ;
+   
+}
+.link grey-text{
+   font-size: 16px;
+}
    .logos{
       padding-top: 40px;
       padding-bottom: 30px;
@@ -891,8 +909,30 @@ body{
    }
    }
    
-   @media (min-width: 450px) and (max-width: 699px) {
-
+@media (min-width: 450px) and (max-width: 699px) {
+   .burguer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      top: 30px;
+      right: 8%;
+      height: 35px;
+      width: 55px;
+}
+   .burguer-line {
+      margin: 0 ;
+      height: 5px;
+      width: 30px;
+      background-color: #072ac8;
+      border-radius: 15%;
+   }
+   .nav-bar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+      padding: 0 20px;
+   }
 
    }
    @media (min-width: 1px) and (max-width: 449px) {
