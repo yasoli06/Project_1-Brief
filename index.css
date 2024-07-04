@@ -566,66 +566,66 @@ body{
    border-radius: 15%;
 }
 .nav-bar{
-   display: none;
    justify-content: space-between;
    align-items: center;
    height: 100px;
    padding: 0 20px;
 }
-   #logo {
+#logo {
    position: absolute;
    margin: 0 auto;
-   padding-left: 30px;
+   padding-left: 60px;
 }
 .link-ul {
    display: none;
  }
 
- #nav-button{
+ .nav-button{
    position: absolute;
    display: flex;
    left: 50%;
    background-color: #072ac8;
    height: 50px;
    width: 90px;
-   font-size: 24px;
+   font-size: 20px;
    margin-top:10px;
 }
 
 .header{
    display: flex;
-   text-align: left;
    width: 85%;
    margin-top: 90px;
-   padding-top: 0;
-   padding-bottom: 0;
+   padding-top: 30px;
+   padding-bottom: 30px;
 }
 
 .header-photos {
    background-image: url(./project-assets/hero-section/hero-image.png);
    background-size: contain;
-   width: 100%;
-   height: 500px;
+   width: 85%;
+   height: 450px;
  }
  .card-1{
    width: 250px;
-   position: relative;
-   top: 0;
-   left: -5%;
+   top: -5%;
+   left: -10%;
 }
 .card-2{
    width: 250px;
-   position: relative;
-   left: 2%;
-   top: 60%;
+   left: -10%;
+   top: 65%;
+}
+.buttons{
+   display: flex;
+   padding-top: 25px;
 }
 .header-content h1{
-   font-size: 2.5em;
+   font-size: 2.2em;
    color: #292E47;
    margin: 1 0 20px 0;
 }
 .header-content p{
-   font-size: 1.2em;
+   font-size: 1.0em;
    color: #6C757D;
    margin: 1 0 20px 0;
 } 
@@ -755,7 +755,7 @@ body{
 }
 #logo {
    position: absolute;
-   margin: 30px;
+   margin: 0px;
    padding-left: px;
 }
 .link-ul {
@@ -775,7 +775,6 @@ body{
    text-align: left;
    width: 90%;
    margin-top: 70px;
-   padding-bottom: 0;
 }
    
 .header-photos {
@@ -792,7 +791,7 @@ body{
 .card-2{
    width: 200px;
    position: relative;
-   left: 35%;
+   left: 40%;
 }
 .header-content h1{
    font-size: 2em;
