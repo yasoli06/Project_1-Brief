@@ -182,7 +182,6 @@ body{
    color:#FFC600;
 }
 
-
 .header-photos{
    background-image: url(./project-assets/hero-section/hero-image.png);
    background-repeat: no-repeat;
@@ -755,8 +754,7 @@ body{
 }
 #logo {
    position: absolute;
-   margin: 0px;
-   padding-left: px;
+   margin: 20px;
 }
 .link-ul {
    display: none;
@@ -811,67 +809,126 @@ body{
 .link grey-text{
    font-size: 16px;
 }
-   .logos{
-      padding-top: 40px;
-      padding-bottom: 30px;
-   }
-   .project{
-      text-align: left;
-      padding-top: 90px;
-      width: 80%;
-      margin: 0 auto;
-   }
-   
-   .blue-square{
-      margin: 0 auto;
-      margin-top: 150px;
-      background-image: url(./project-assets/testimonial-section/orbit.png);
-      background-color: #292E47; 
-      background-size: cover;
-      width: 90%;
-      height: 200px;
-   }
+.logos{
+   margin-top: 0; 
+}
+.logos img{
+   height: 30px;
+}
+.project{
+   text-align: left;
+   padding-top: 80px;
+   width: 90%;
+   margin-left: 70px;
+}
+.project-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 95%;
+}
+.project-card{
+   width: 30%;
+   background-color: white;
+   box-shadow: 0 0px 0px rgb(99, 99, 99);
+   transition-duration: 0.5s;
+   height: 350px;
+}
+.project-img{
+   width: 100%;
+   height: 170px;
+}
+.project-link {
+   text-decoration: none;
+}
+.project-title{
+   color: black;
+   font-size: 20px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   text-align: left;
+   padding-left: 10px;
+}
+.project-text{
+   font-size: 16px;
+   text-align: left;
+   padding-left: 10px;
+   margin-top: 2px;
+   margin-bottom: 40px;
+}
+.learn-more{
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 12px;
+   padding-left: 15px;
+}
+.blue-square{
+   margin-top: 100px;
+   background-image: url(./project-assets/testimonial-section/orbit.png);
+   background-color: #292E47; 
+   background-size: cover;
+   width: 80%;
+   height: 300px;
+}
    .emoji-top-left{
       position: absolute;
-      top: 5%;
-      left: 1%;
+      top: 2%;
+      left: 0;
       right: auto;
       bottom: auto;
-      height: 50px;
+      height: 45px;
    }
    .emoji-top-right{
       position: absolute;
-      top: 5%;
+      top: 2%;
       left: auto;
-      right: 12%;
+      right: 20%;
       bottom: auto;
-      height: 65px;
+      height: 45px;
    }
    .emoji-bottom-left{
       position: absolute;
       top: auto;
       left: 1%;
       right: auto;
-      bottom: 14%;
-      height: 50px;
+      bottom: 35%;
+      height: 45px;
    }
    .emoji-bottom-right{
       position: absolute;
       top: auto;
       left: auto;
-      right: 12%;
-      bottom: 14%;
-      height: 65px; 
+      right: 20%;
+      bottom: 35%;
+      height: 45px; 
    }
    .orbit h4{
       color: white;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: bold;
    }
    .orbit p {
       color: #ffc600;
-      font-size: 20px;
+      font-size: 16px;
    }
+   .client-info img{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-top: 40px;
+   }
+   .client-detail h5{
+      color: #a2d6f9;
+      font-size: 16px;
+      margin-bottom: 10px;
+   }
+   .client-detail p {
+      color: white;
+      font-size: 12px;
+      margin-top: 5px;
+   }
+
+   
    .yellow-square{
       margin: 0 auto;
        margin-top: 150px;
