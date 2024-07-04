@@ -50,21 +50,27 @@ The website is built for a fictional web design company and includes the followi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/responsive-website-project.git
-   cd responsive-website-project
+   git clone https://github.com/yasoli06/Project_1-Brief.git
+   cd Project_1-Brief
+
 2. Open the project in your preferred IDE.
 
 3. To view the website locally, open the index.html file in a web browser.
 
 ## Deployment
-The website is deployed on Netlify. You can view the live website here.
+The website is deployed on Vercel. You can view the live website ![here](https://vercel.com/yasmins-projects-080291b3/project-1-brief)
 
 ## Assets
 For this project, the following assets were used:
 
+HTML, CSS & JavaScript
 A Figma design file for the website layout and specifications.
 A folder containing all necessary images for the project.
-Resources
 MDN Web Docs
 W3Schools
-Figma
+
+## Contacto
+
+Nombre: Yasmin Neri
+E-mail: yasmiineri@gmail.com
+
