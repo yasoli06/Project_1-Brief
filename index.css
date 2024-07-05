@@ -1075,5 +1075,73 @@ body{
    }
 
    }
-   @media (min-width: 1px) and (max-width: 449px) {
+@media (min-width: 1px) and (max-width: 449px) {
+.burguer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      top: 30px;
+      right: 8%;
+      height: 15px;
+      width: 55px;
+}
+.burguer-line {
+      margin: 0 ;
+      height: 5px;
+      width: 30px;
+      background-color: #072ac8;
+      border-radius: 15%;
    }
+.nav-bar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100px;
+   padding: 0 20px;
+}
+.hidden-nav{
+   z-index: 500;
+}
+#logo {
+   position: absolute;
+   margin: 20px;
+}
+.link-ul {
+   display: none;
+}
+#nav-button{
+   position: absolute;
+   display: flex;
+   left: 50%;
+   background-color: #072ac8;
+   height: 40px;
+   width: 80px;
+   font-size: 16px;
+}
+.header{
+   display: flex;
+   text-align: left;
+   width: 90%;
+   margin-top: 70px;
+}
+   
+.header-photos {
+   background-image: url(./project-assets/hero-section/hero-image.png);
+   background-size: contain;
+   width: 70%;
+   height: 100px;
+}
+.card-1{
+   
+   width: 50px;
+   top: 0;
+}
+.card-2{
+   width: 200px;
+   position: relative;
+   left: 40%;
+}
+
+
+
+}
